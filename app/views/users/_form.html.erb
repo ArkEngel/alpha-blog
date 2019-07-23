@@ -1,4 +1,4 @@
-<%= render 'shared/errors', obj: @user %>'
+<%= render 'shared/errors', obj: @user %>
 
 <div class="row">
   <div class="col-xs-12">
@@ -31,10 +31,9 @@
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <%= f.submit(@user.new_record? ? "Sign Up" : "Update", class: 'btn btn-primary btn-lg') %>
+          <%= f.submit(@user.new_record? ? "Sign Up" : "Update", class: 'btn btn-primary btn-lg') %><% end %>
           <%= link_to "Cancel", articles_path, class: "btn btn-danger btn-lg" %>
         </div>
       </div>
-      <% end %>
   </div>
 </div>
